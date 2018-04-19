@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="288px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="75px"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/zanwei" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="50px"
+                android:text="简约雪尼尔高楼高档纯色成品窗帘4色"
+                android:textColor="@color/login_text"
+                android:textSize="46px" />
+
+            <TextView
+                android:id="@+id/standard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="34px"
+                android:text="尺寸：2.5*3.2m,颜色：天蓝色"
+                android:textColor="@color/login_tint"
+                android:textSize="38px" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="40px"
+                android:gravity="center"
+                android:text="￥9.8万元"
+                android:textColor="@color/red"
+                android:textSize="46px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="4px"
+            android:layout_height="174px"
+            android:layout_marginLeft="250px"
+            android:background="#fff0f0f0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100px"
+            android:gravity="center"
+            android:text="服务"
+            android:textColor="@color/login_tint"
+            android:textSize="38px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长途运输+同城配送+步梯≤7楼免费搬楼"
+                android:textColor="@color/login_text"
+                android:textSize="38px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(电梯入户免费搬楼)"
+                android:textColor="@color/login_text"
+                android:textSize="38px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="#fff0f0f0" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="192px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="192px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_marginLeft="75px"
+                android:src="@mipmap/house" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:gravity="center"
+                android:text="房智之家"
+                android:textColor="@color/login_text"
+                android:textSize="38px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60px"
+                android:gravity="center"
+                android:text="15123058697"
+                android:textColor="@color/login_text"
+                android:textSize="38px" />
+
+            <ImageView
+                android:layout_width="25px"
+                android:layout_height="38px"
+                android:layout_marginLeft="460px"
+                android:src="@mipmap/address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:gravity="center"
+                android:text="重庆市南岸区南坪工贸玖玺国际7栋36-1"
+                android:textSize="38px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="34px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="96px"
+            android:src="@mipmap/arrow_go" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="232px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="76px"
+            android:gravity="center"
+            android:text="卖家留言"
+            android:textSize="38px" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/text_addbg"
+            android:layout_marginLeft="46px"
+            android:paddingLeft="38px"
+            android:textSize="38px"
+            android:hint="给商家留言（45字以内）"
+            android:layout_height="172px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#fff0f0f0"/>
+</com.zhy.autolayout.AutoLinearLayout>

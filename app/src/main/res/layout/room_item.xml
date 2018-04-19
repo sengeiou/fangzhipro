@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200px"
+    android:layout_height="158px"
+    android:layout_marginLeft="20px"
+    android:layout_gravity="center"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/view_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/iv_cover_green"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="20px"
+        android:paddingLeft="8px"
+        android:paddingRight="8px"
+        android:text="121241414124124123"
+        android:textColor="@color/login_text"
+        android:textSize="30px" />
+</com.zhy.autolayout.AutoFrameLayout>

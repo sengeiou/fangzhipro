@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fangzhi.dafangzhi.views.AutoCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210px"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="154px"
+                android:layout_height="154px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/zanwei" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="升达强化地板（H8-1）"
+                    android:textColor="@color/login_tint"
+                    android:textSize="38px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="56px"
+                        android:gravity="center"
+                        android:text="价格："
+                        android:textColor="@color/login_tint"
+                        android:textSize="38px" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56px"
+                        android:gravity="center"
+                        android:text="2.4万元"
+                        android:textColor="@color/red"
+                        android:textSize="45px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="62px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:padding="10px"
+            android:src="@mipmap/arrow_go" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/login_tint"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.fangzhi.dafangzhi.views.AutoCardView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="188px"
+        android:layout_height="match_parent"
+        android:background="#ffffffff">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="188px"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:padding="10px"
+                android:src="@mipmap/logo" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:layout_marginBottom="20px"
+                android:background="@mipmap/selected_color_piece"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="20px">
+
+                <ImageView
+                    android:id="@+id/mainimg"
+                    android:layout_width="88px"
+                    android:layout_height="78px"
+                    android:src="@mipmap/home_pre" />
+
+                <TextView
+                    android:id="@+id/mainname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textColor="@color/login_butt_yes"
+                    android:textSize="34px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/collect"
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/collectimg"
+                    android:layout_width="88px"
+                    android:layout_height="78px"
+                    android:src="@mipmap/collection_icon" />
+
+                <TextView
+                    android:id="@+id/collectname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:text="收藏"
+                    android:textColor="@color/text_tint"
+                    android:textSize="34px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/shop"
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/shopimg"
+                    android:layout_width="88px"
+                    android:layout_height="78px"
+                    android:src="@mipmap/buying_car" />
+
+                <TextView
+                    android:id="@+id/shopname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:gravity="center"
+                    android:text="购物车"
+                    android:textColor="@color/text_tint"
+                    android:textSize="34px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/myself"
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myselfimg"
+                    android:layout_width="88px"
+                    android:layout_height="78px"
+                    android:src="@mipmap/user" />
+
+                <TextView
+                    android:id="@+id/myselfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:gravity="center"
+                    android:text="我的"
+                    android:textColor="@color/text_tint"
+                    android:textSize="34px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="168px"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60px">
+
+            <ImageView
+                android:layout_width="28px"
+                android:layout_height="28px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40px"
+                android:src="@drawable/information" />
+
+            <ImageView
+                android:id="@+id/messageimg"
+                android:layout_width="match_parent"
+                android:layout_height="78px"
+                android:src="@mipmap/news" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/gray" />
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="114px"
+        android:layout_marginTop="114px"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="62px"
+            android:layout_height="60px"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="登录"
+            android:textColor="@color/login_hint"
+            android:textSize="62px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back"
+        android:layout_marginLeft="800px"
+        android:layout_marginTop="59dp"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="58px"
+                android:layout_height="66px"
+                android:src="@mipmap/icon_phone" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="802px"
+                android:layout_height="66px"
+                android:background="@null"
+                android:hint="请输入你的手机"
+                android:paddingLeft="40px"
+                android:textColor="@color/login_text"
+                android:textColorHint="@color/login_hint"
+                android:textScaleX="0.96"
+                android:textSize="54px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="910px"
+            android:layout_height="1px"
+            android:layout_marginTop="20px"
+            android:background="@color/login_hint" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="98px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="58px"
+                        android:layout_height="66px"
+                        android:src="@mipmap/icon_key" />
+
+                    <EditText
+                        android:id="@+id/verification"
+                        android:layout_width="522px"
+                        android:layout_height="66px"
+                        android:background="@null"
+                        android:hint="验证码"
+                        android:paddingLeft="40px"
+                        android:textColor="@color/login_text"
+                        android:textColorHint="@color/login_hint"
+                        android:textScaleX="0.96"
+                        android:textSize="54px" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="1px"
+                    android:layout_marginTop="20px"
+                    android:background="@color/login_hint" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90px"
+                android:layout_marginLeft="40px"
+                android:gravity="center"
+                android:padding="20px"
+                android:background="@drawable/text_addbg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66px"
+                    android:gravity="center"
+                    android:text="验证码"
+                    android:textColor="@color/login_hint"
+                    android:textSize="54px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="98px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="58px"
+                android:layout_height="66px"
+                android:src="@mipmap/icon_password" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="802px"
+                android:layout_height="66px"
+                android:background="@null"
+                android:hint="设置密码"
+                android:paddingLeft="40px"
+                android:textColor="@color/login_text"
+                android:textColorHint="@color/login_hint"
+                android:textScaleX="0.96"
+                android:textSize="54px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="910px"
+            android:layout_height="1px"
+            android:layout_marginTop="20px"
+            android:background="@color/login_hint" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22px"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="我已阅读，并同意"
+                android:textSize="38px"
+                android:textColor="@color/login_hint" />
+
+            <TextView
+                android:id="@+id/protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《用户协议》"
+                android:textSize="38px"
+                android:textColor="#ff000000" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="910px"
+            android:layout_height="130px"
+            android:layout_marginTop="136px"
+            android:background="@drawable/login_butt_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="立即注册"
+            android:textColor="@drawable/login_butttext_select"
+            android:textSize="54px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

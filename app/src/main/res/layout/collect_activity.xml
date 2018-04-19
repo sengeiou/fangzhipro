@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/layout_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="178px"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="我的收藏"
+                        android:textColor="@color/login_text"
+                        android:textSize="62px" />
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/gohome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/compile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5px"
+                            android:gravity="center"
+                            android:text="编辑"
+                            android:textColor="@color/login_tint"
+                            android:textSize="54px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="136px">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+                    android:layout_height="136px"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="128px"
+                        android:gravity="center"
+                        android:text="装修方案"
+                        android:textColor="@color/login_text"
+                        android:textSize="54px" />
+
+                    <TextView
+                        android:id="@+id/xia"
+                        android:layout_width="204px"
+                        android:layout_height="8px"
+                        android:background="@color/login_text"
+                        android:gravity="center" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/commodity"
+                    android:layout_width="0dp"
+                    android:layout_height="136px"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/commodityname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="128px"
+                        android:gravity="center"
+                        android:text="商品"
+                        android:textColor="@color/login_tint"
+                        android:textSize="54px" />
+
+                    <TextView
+                        android:id="@+id/commodityxia"
+                        android:layout_width="204px"
+                        android:layout_height="8px"
+                        android:background="@color/login_text"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/schemerecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/commodityrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff0f0f0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="450px"
+                    android:text="亲！还没有任何收藏哦"
+                    android:textColor="@color/login_text"
+                    android:textSize="38px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100px"
+                    android:background="@drawable/text_yjbg"
+                    android:paddingBottom="20px"
+                    android:paddingLeft="50px"
+                    android:paddingRight="50px"
+                    android:paddingTop="20px"
+                    android:text="去逛逛>"
+                    android:textColor="@color/login_text"
+                    android:textSize="38px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/deleteview"
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/check"
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_marginLeft="96px"
+                            android:src="@mipmap/gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40px"
+                            android:text="全选"
+                            android:textSize="36px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <TextView
+                        android:id="@+id/delete"
+                        android:layout_width="470px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10px"
+                        android:background="@color/red"
+                        android:gravity="center"
+                        android:text="删除"
+                        android:textColor="@color/white"
+                        android:textSize="60px" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

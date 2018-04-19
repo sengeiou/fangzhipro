@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#66707070</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_press">#66707070</color>
+
+    <color name="login_text">#FF001C34</color>
+    <color name="login_tint">#FF7f8d99</color>
+    <color name="login_hint">#FF487488</color>
+    <color name="login_butt_no">#FF487488</color>
+    <color name="login_butt_yes">#FFffffff</color>
+
+    <color name="gray">#FFc8c8c8</color>
+
+    <color name="text_tint">#ff919da7</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="alpha_gray">#CC646464</color>
+    <color name="content_bg">#F3F3F3</color>
+
+    <color name="alpha_green">#5550e953</color>
+    <color name="alpha_green_light">#55AAE7AB</color>
+
+    <color name="red">#FFFF3333</color>
+    <color name="alpha_light_gray">#11f4f4f4</color>
+
+</resources>

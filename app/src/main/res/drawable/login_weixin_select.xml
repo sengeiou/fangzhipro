@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 按下时的背景图片 -->
+    <item android:state_pressed="true" android:drawable="@mipmap/logo_weixin_pre" />
+    <!-- 背景图片 -->
+    <item android:state_pressed="false"   android:drawable="@mipmap/logo_weixin" />
+
+</selector>

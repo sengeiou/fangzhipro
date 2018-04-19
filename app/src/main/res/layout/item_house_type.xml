@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fangzhi.dafangzhi.views.AutoCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1000px"
+    android:layout_margin="20px"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="900px"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/iv_image"
+            android:gravity="center"
+            android:text="翡翠城"
+            android:textColor="@color/text_color"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_image"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="面积:86㎡"
+            android:textSize="40px"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.fangzhi.dafangzhi.views.AutoCardView>

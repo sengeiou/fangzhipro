@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="134px"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="134px"
+        android:layout_marginLeft="116px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="125px"
+            android:text="欧式"
+            android:gravity="center"
+            android:textColor="@color/login_text"
+            android:textSize="54px" />
+
+        <TextView
+            android:id="@+id/xia"
+            android:layout_width="106px"
+            android:layout_height="8px"
+            android:background="@color/login_text"
+            android:gravity="center" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

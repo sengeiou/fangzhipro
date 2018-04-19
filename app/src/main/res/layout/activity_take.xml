@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff0f0f0"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:layout_marginTop="4px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收货地址"
+            android:textSize="62px" />
+
+        <TextView
+            android:id="@+id/setAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="80px"
+            android:text="设置为默认地址"
+            android:textSize="40px" />
+
+        <ImageView
+            android:id="@+id/addressSelecte"
+            android:layout_width="58px"
+            android:layout_height="58px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="38px"
+            android:layout_toLeftOf="@+id/setAddress"
+            android:src="@mipmap/red" />
+
+        <ImageView
+            android:id="@+id/addressBack"
+            android:layout_width="68px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38px"
+            android:src="@mipmap/icon_back" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/personMessage"
+        android:layout_width="match_parent"
+        android:layout_height="190px"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/personName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="收货人姓名"
+            android:textColor="#001c34"
+            android:textColorHint="#ff7f8d99"
+            android:textSize="52px" />
+
+        <TextView
+            android:layout_width="4px"
+            android:layout_height="96px"
+            android:background="#fff0f0f0" />
+
+        <EditText
+            android:id="@+id/personPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="手机号码"
+            android:textColor="#001c34"
+            android:textColorHint="#ff7f8d99"
+            android:textSize="52px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/personCityMessage"
+        android:layout_width="match_parent"
+        android:layout_height="190px"
+        android:layout_below="@+id/personMessage"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80px"
+                android:layout_weight="1"
+                android:text="省、区、县"
+                android:textSize="52px" />
+
+            <ImageView
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="72px"
+                android:src="@mipmap/arrow_go" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:layout_width="4px"
+            android:layout_height="96px"
+            android:background="#fff0f0f0" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80px"
+                android:layout_weight="1"
+                android:text="街道"
+                android:textSize="52px" />
+
+            <ImageView
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="72px"
+                android:src="@mipmap/arrow_go" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="382px"
+        android:layout_below="@+id/personCityMessage"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/postcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="邮编"
+            android:textColor="#001c34"
+            android:textSize="52px" />
+
+        <TextView
+            android:layout_width="4px"
+            android:layout_height="96px"
+            android:background="#fff0f0f0" />
+
+        <EditText
+            android:id="@+id/detailedAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="详细地址"
+            android:textColor="#001c34"
+            android:textSize="52px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#fff0f0f0" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="574px"
+            android:layout_height="180px"
+            android:layout_centerHorizontal="true"
+            android:background="#ffcc0000"
+            android:gravity="center"
+            android:text="保存并使用"
+            android:textColor="#ffffff"
+            android:textSize="56px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

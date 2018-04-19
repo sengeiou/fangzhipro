@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/iv_photo1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="96px"
+        android:layout_height="96px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/return_ipad" />
+
+    <RelativeLayout
+        android:id="@+id/view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <com.fangzhi.dafangzhi.views.loading.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="100dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>
