@@ -141,6 +141,7 @@ public class DownLoadImageService {
             mIndex = mIndex - 1;
             //全部下载完成开始画图
             runOnQueueSingle(new DrawImageThread());
+
         }
     }
 
